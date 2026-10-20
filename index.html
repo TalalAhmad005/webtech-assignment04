@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Markdown Slides</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Markdown Slides</h1>
+    <div class="actions">
+      <span id="status"></span>
+      <button id="saveBtn">Save</button>
+      <button id="presentBtn">Present</button>
+    </div>
+  </header>
+  <main id="workspace">
+    <section class="panel">
+      <h2>Markdown Editor</h2>
+      <textarea id="editor" spellcheck="false" aria-label="Markdown editor"></textarea>
+    </section>
+    <section class="panel">
+      <h2>Live Preview</h2>
+      <div class="slide-area"><article class="slide" id="previewSlide"></article></div>
+      <nav class="controls">
+        <button id="previous" aria-label="Previous slide">←</button>
+        <span id="previewCount">1 / 1</span>
+        <button id="next" aria-label="Next slide">→</button>
+        <button id="previewFullscreen" aria-label="Toggle fullscreen">⛶</button>
+      </nav>
+    </section>
+  </main>
+  <section id="presentation" class="hidden">
+    <button id="exitBtn">Exit presentation</button>
+    <div class="presentation-area"><article class="slide" id="presentationSlide"></article></div>
+    <nav class="controls">
+      <button id="presentPrevious" aria-label="Previous slide">←</button>
+      <span id="presentationCount">1 / 1</span>
+      <button id="presentNext" aria-label="Next slide">→</button>
+      <button id="presentFullscreen" aria-label="Toggle fullscreen">⛶</button>
+    </nav>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
